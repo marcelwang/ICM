@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RecordYou</title>
+
+    <!-- import libraries -->
+    <script src="lib/simplepeer.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+
+    <style>
+      body {
+        font-family: helvetica, arial, sans-serif;
+         margin: 0;
+         padding: 0;
+         overflow: hidden;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      h1 {
+        font-style: italic;
+        color: #373fff;
+      }
+
+      .myrecordedvideo {
+        position: absolute;
+      }
+
+      .orecordedvideo {
+        position: absolute;
+      }
+
+      #canvas{
+        background-color: transparent;
+        width:100%;
+  
+   
+      }
+      
+    </style>
+  </head>
+  <body>
+    
+    <video id="video" width="200" height="150" muted></video>
+    <canvas id="canvas"></canvas>
+    
+    <!-- scripts -->
+    <script src="script.js"></script>
+  </body>
+</html>
